@@ -13,13 +13,18 @@ import { RootStackParams } from '../navigation/StackNavigation';
 
 
 // Recomendado por Documentation ↓
-interface Props extends StackScreenProps<RootStackParams,'PersonaScreen'>{}
+interface Props extends StackScreenProps<RootStackParams,'PersonaScreen'>{
 
-export const PersonaScreen = ({route,navigation}:Props) => {
+
+}
+
+export const PersonaScreen = ({route,navigation,}:Props) => {
 
 
 // const params = route.params as RouteParams;
 const params = route.params 
+
+
 
 
 useEffect(() => {

@@ -19,7 +19,9 @@ const Stack = createStackNavigator<RootStackParams>();
 export const StackNavigation = () => {
   return (
     <Stack.Navigator
+    
     initialRouteName='Pagina1Screen'
+
     screenOptions={{
       headerStyle:{ 
         elevation:0,

@@ -1,3 +1,6 @@
+
+
+
 import { StackScreenProps } from '@react-navigation/stack';
 import { Button, Text, TouchableOpacity, View } from 'react-native';
 import { styles } from '../theme/appTheme';
@@ -7,7 +10,6 @@ interface Props extends StackScreenProps<any, any> {
 
 
 };
-
 
 
 
