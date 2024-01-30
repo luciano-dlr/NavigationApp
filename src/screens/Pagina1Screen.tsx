@@ -37,7 +37,10 @@ export const Pagina1Screen = ({ navigation }: Props) => {
 
 
 
-      <Text>Navegar con Argumentos</Text>
+      <Text style={{
+        marginVertical:20,
+        fontSize:20,
+      }}>Navegar con Argumentos</Text>
 
       <View style={{flexDirection:'row',justifyContent:'space-around'}}>
 

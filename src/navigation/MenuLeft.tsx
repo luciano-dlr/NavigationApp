@@ -25,7 +25,7 @@ export const MenuLeft = () =>  {
     drawerContent={(props)=> <DrawerContent {...props}/>}
     >
       <Drawer.Screen name="StackNavigation" options={{headerShown: false}} component={StackNavigation} />
-      <Drawer.Screen name="SettingsScreen"   component={SettingsScreen} />
+      <Drawer.Screen name="SettingsScreen"   component={SettingsScreen} options={{headerShown: false}}/>
     </Drawer.Navigator>
   );
 }
