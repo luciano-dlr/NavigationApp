@@ -14,7 +14,12 @@ export const DrawerNavigation = () =>  {
     <Drawer.Navigator
     screenOptions={{
       drawerType:(width >= 768 ? 'permanent' : 'front')
+      
+
+
     }}
+
+    
     >
       <Drawer.Screen name="StackNavigation" options={{title:'Home',headerShown: false}} component={StackNavigation} />
       <Drawer.Screen name="SettingsScreen" options={{title:'Settings'}}  component={SettingsScreen} />
