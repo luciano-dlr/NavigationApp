@@ -1,21 +1,28 @@
-
-
-
-import { StackScreenProps } from '@react-navigation/stack';
 import { Button, Text, TouchableOpacity, View } from 'react-native';
 import { styles } from '../theme/appTheme';
+import { useEffect } from 'react';
+import { DrawerScreenProps } from '@react-navigation/drawer';
 
 
-interface Props extends StackScreenProps<any, any> {
+// interface Props extends StackScreenProps<any, any> {};
 
-
-};
+interface Props extends DrawerScreenProps<any,any>{}
 
 
 
 export const Pagina1Screen = ({ navigation }: Props) => {
 
-  // console.log("🚀 ~ Pagina1Screen ~ props:", navigation)
+  useEffect(() => {
+    navigation.setOptions({
+      headerLeft:() => (
+        <Button
+        title='Menu'
+        onPress={()=>{navigation.toggleDrawer()}}
+        />
+      )
+    })
+  }, [])
+  
 
 
 
