@@ -1,5 +1,11 @@
 import { StyleSheet } from "react-native";
 
+export const colores = {
+
+   primary:'#5856d6'
+
+}
+
 export const styles = StyleSheet.create({
 
    globalMargin: {
@@ -36,11 +42,23 @@ export const styles = StyleSheet.create({
       marginHorizontal:30,
       alignItems:'center'
    },
+   drawerItem:{
+      flexDirection:'row',
+   },
    menuBtn:{
-      marginVertical:10
+      marginVertical:10,
+      flexDirection:'row',
+      alignSelf:'flex-start'
    },
    menuTxt:{
       fontSize:20
    }
 
 });
+
+// flex:1,
+// flexDirection:'column',
+// alignItems:'stretch',
+// justifyContent:'flex-start'
+// position:'relative',
+// Hola soy joita,
