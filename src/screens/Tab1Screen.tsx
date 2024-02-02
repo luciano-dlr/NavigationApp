@@ -4,16 +4,17 @@ import { Text, View } from 'react-native'
 import { useEffect } from 'react';
 
 import { styles } from '../theme/appTheme';
+import { TouchableIcon } from '../components/TouchableIcon';
 
 export const Tab1Screen = () => {
-  
+
   useEffect(() => {
-    
+
     console.log('tabScreen 1');
-    
+
   }, [])
-  
-  
+
+
   //icono en drawer btn
   //drawer items 
 
@@ -24,42 +25,22 @@ export const Tab1Screen = () => {
 
   return (
     <View style={styles.globalMargin}>
-      <Text style={styles.title}>Bottom Icons</Text>
+      <Text style={styles.title}>Icons</Text>
 
       <Text>
+
+        <TouchableIcon iconName="balloon" />
+        <TouchableIcon iconName="apps" />
+        <TouchableIcon iconName="id-card" />
+        <TouchableIcon iconName="chatbox-ellipses" />
+        <TouchableIcon iconName="people" />
+        <TouchableIcon iconName="albums" />
+        <TouchableIcon iconName="menu" />
+        <TouchableIcon iconName="bar-chart" />
+        <TouchableIcon iconName="baseball" />
+        <TouchableIcon iconName="person-circle" />
+        <TouchableIcon iconName="people-circle" />
         
-      <Icon name="balloon" size={75} color="black" />
-      <Icon name="apps" size={75} color="black" />
-      <Icon name="id-card" size={75} color="black" />
-
-      </Text>
-
-      <Text style={styles.title}>Top icons</Text>
-
-      <Text>
-        
-      <Icon name="chatbox-ellipses" size={75} color="black" />
-      <Icon name="people" size={75} color="black" />
-      <Icon name="albums" size={75} color="black" />
-
-      </Text>
-      <Text style={styles.title}>Drawer</Text>
-
-      <Text>
-        
-      <Icon name="menu" size={75} color="black" />
-      <Icon name="bar-chart" size={75} color="black" />
-      <Icon name="baseball" size={75} color="black" />
-
-      </Text>
-      <Text style={styles.title}>Pedro y maria</Text>
-
-      <Text>
-        
-      <Icon name="person-circle" size={75} color="black" />
-      <Icon name="people-circle" size={75} color="black" />
-     
-
       </Text>
     </View>
 

@@ -1,8 +1,9 @@
 import Icon from 'react-native-vector-icons/Ionicons';
 import { Button, Text, TouchableOpacity, View } from 'react-native';
 import { styles } from '../theme/appTheme';
-import { useEffect } from 'react';
+import { useContext, useEffect } from 'react';
 import { DrawerScreenProps } from '@react-navigation/drawer';
+import { AuthContext } from '../context/AuthContext';
 
 
 // interface Props extends StackScreenProps<any, any> {};
@@ -12,6 +13,10 @@ interface Props extends DrawerScreenProps<any, any> { }
 
 
 export const Pagina1Screen = ({ navigation }: Props) => {
+
+ 
+
+
 
   useEffect(() => {
     navigation.setOptions({
@@ -34,6 +39,9 @@ export const Pagina1Screen = ({ navigation }: Props) => {
   }, [])
 
 
+  
+
+
 
 
   return (
@@ -42,7 +50,7 @@ export const Pagina1Screen = ({ navigation }: Props) => {
 
       <Button
         title='Ir a Pagina 2'
-        onPress={() => navigation.navigate('Pagina2Screen')}
+        onPress={() => {navigation.navigate('Pagina2Screen')} }
       />
 
 
